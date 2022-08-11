@@ -1,0 +1,112 @@
+nav {
+  padding: 8px 16px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 50px;
+  font: italic;
+  color: red;
+  font-size: 30px;
+}
+
+nav .button {
+  background: #aa0000;
+  background: linear-gradient(329deg, #aa0000 0%, red 100%, #021406 100%, #c30515 100%);
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+header {
+  background: #e30b0b;
+  background: linear-gradient(90deg, #e30b0b 25%, #520a0a 100%, #790909 100%);
+  padding: 10px;
+  height: 40vh;
+  min-height: 300px;
+  color: white;
+  font: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  color: white;
+  display: flex;
+  font: italic;
+  background: #10b518;
+  background: radial-gradient(circle, #10b518 47%, #021406 100%, #084413 100%);
+  display: grid;
+  grid-template-areas: "historia""menu";
+}
+
+main .historia {
+  grid-area: auto;
+  text-align: center;
+}
+
+main .menu {
+  grid-area: menu;
+  text-align: center;
+}
+
+main .precios {
+  font-size: 25px;
+  text-align: center;
+}
+
+main .card {
+  background: #e30b0b;
+  background: linear-gradient(90deg, #e30b0b 25%, #520a0a 100%, #790909 100%);
+}
+
+footer {
+  text-align: center;
+  font: italic;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 16px 0px;
+    font-size: 1.5em;
+  }
+}
+
+.pizza-margarita {
+  color: #e30b0b
+}
+
+.pizza-napolitana {
+  color: #e34b0b
+}
+
+.pizza-fugazzeta {
+  color: #ef8345
+}

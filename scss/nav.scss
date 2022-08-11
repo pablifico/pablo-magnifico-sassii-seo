@@ -1,0 +1,23 @@
+nav {
+    padding: 8px 16px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul li {
+        display: inline-block;
+        margin: 0 50px;
+        font: $font;
+        color: red;
+        font-size: 30px;
+    
+    }
+    .button{
+        background: rgb(170,0,0);
+        background: linear-gradient(329deg, rgba(170,0,0,1) 0%, rgba(255,0,0,1) 100%, rgba(2,20,6,1) 100%, rgba(195,5,21,1) 100%);
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
+}

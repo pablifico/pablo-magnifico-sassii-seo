@@ -1,0 +1,13 @@
+header {
+    background: rgb(227,11,11);
+    background: linear-gradient(90deg, rgba(227,11,11,1) 25%, rgba(82,10,10,1) 100%, rgba(121,9,9,1) 100%);
+    padding: 10px;
+    height: 40vh;
+    min-height: 300px;
+    color: white;
+    font: $font;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

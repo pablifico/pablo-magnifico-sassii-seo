@@ -1,0 +1,29 @@
+@import "nav";
+@import "header";
+@import "contentmain";
+@import "footer";
+@import "animation";
+@import "media";
+
+
+// Variables
+$font: italic;
+
+
+
+//Mapas
+
+$pizzas: (
+    margarita: #e30b0b,
+    napolitana: #e34b0b,
+    fugazzeta: #ef8345,
+);
+
+@each $pizza, $color in $pizzas{
+    .pizza-#{$pizza} {
+        color: $color;
+    }
+}
+
+
+

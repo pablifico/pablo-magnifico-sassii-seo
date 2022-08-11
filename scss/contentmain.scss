@@ -1,0 +1,33 @@
+main{
+    color: white;
+    display: flex;
+    font: $font;
+    background: rgb(16,181,24);
+    background: radial-gradient(circle, rgba(16,181,24,1) 47%, rgba(2,20,6,1) 100%, rgba(8,68,19,1) 100%);
+    display: grid;
+    grid-template-areas: "historia" "menu" ;
+
+    .historia {
+        grid-area: auto;
+    
+        text-align: center;
+    }
+    
+    .menu {
+        grid-area: menu;
+        text-align: center;
+    }
+    
+    .precios{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .card {
+        background: rgb(227,11,11);
+        background: linear-gradient(90deg, rgba(227,11,11,1) 25%, rgba(82,10,10,1) 100%, rgba(121,9,9,1) 100%);
+    
+    }
+   
+}
+
